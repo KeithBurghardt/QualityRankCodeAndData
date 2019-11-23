@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+
+.messagebox{
+	display:block;
+	width:300px;
+	margin: 0px auto 0px auto;
+	border:1px solid #c93;
+	background:#ffc;
+	font-weight:bold;
+	padding:0px;
+}
+
+.messageboxok{
+	width:300px;
+	margin: 0px auto 0px auto;
+	border:1px solid #349534;
+	background:#C9FFCA;
+	padding:0px;
+	font-weight:bold;
+	color:#008000;
+}
+
+.messageboxerror{
+	width:300px;
+	margin: 0px auto 0px auto;
+	border:1px solid #CC0000;
+	background:#F7CBCA;
+	padding:0px;
+	font-weight:bold;
+	color:#CC0000;
+}

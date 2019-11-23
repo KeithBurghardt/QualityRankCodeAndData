@@ -1,0 +1,331 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+body.login {
+	font-family: Georgia, serif;
+	background: center 70px no-repeat #8EC1DA;
+	color: #3a3a3a;
+}
+
+.boxed {
+	border: 2px solid green;
+}
+
+@import "compass/css3";
+
+$DarkBrown: #292321;
+
+$Orange: #CC3300;
+
+
+#rad_button {
+
+  margin:0 0 0.75em 0;
+
+}
+
+
+#rad_button  input[type="radio"] {
+
+    display:none;
+
+}
+
+#rad_button input[type="radio"] + label {
+
+    color: $DarkBrown;
+
+    font-family:Arial, sans-serif;
+
+    font-size:14px;
+
+}
+
+#rad_button input[type="radio"] + label span {
+
+    display:inline-block;
+
+    width:19px;
+
+    height:19px;
+
+    margin:-1px 4px 0 0;
+
+    vertical-align:middle;
+
+    cursor:pointer;
+
+    -moz-border-radius:  50%;
+
+    border-radius:  50%;
+
+}
+
+
+#rad_button input[type="radio"] + label span {
+
+     background-color:$DarkBrown;
+
+}
+
+
+#rad_button input[type="radio"]:checked + label span{
+
+     background-color:$Orange;
+
+}
+
+
+#rad_button input[type="radio"] + label span,
+#rad_button input[type="radio"]:checked + label span {
+
+  -webkit-transition:background-color 0.4s linear;
+
+  -o-transition:background-color 0.4s linear;
+
+  -moz-transition:background-color 0.4s linear;
+
+  transition:background-color 0.4s linear;
+
+}
+
+
+
+#login_form {
+
+	width: 700px;
+
+	margin: 20px auto;
+
+	text-align: center;
+
+}
+
+
+
+#login_form .logo {
+
+	font-size: 30px;
+
+	font-weight: bold;
+
+	color: #FFFFFF;
+	text-shadow:
+		-1px -1px 0 #990000,
+		1px -1px 0 #990000,
+		-1px 1px 0 #990000,
+		1px 1px 0 #990000;
+
+	padding:0 0 0 0px;
+}
+
+
+#login_form .description {
+
+	text-align: left;
+
+	background-color: white;
+
+	margin: 20px auto;
+
+	padding: 50px 50px;
+
+	font-size: 20px;	
+
+	border: 10px solid #990000;
+
+	-moz-border-radius: 35px;
+
+	border-radius: 35px;
+
+}
+
+
+#login_form .Qdescription {
+	text-align: left;
+
+	background-color: white;
+
+	margin: 20px auto;
+
+	padding: 5px 50px;
+
+	font-size: 20px;
+
+	
+border: 10px solid #990000;
+
+	-moz-border-radius: 35px;
+
+	border-radius: 35px;
+
+}
+
+
+#login_form .answer {
+        position: relative;
+        left: 30px;
+	margin-left: -16px; 
+
+}
+#login_form .AnswerInput {
+        position: relative;
+        left: 10px;
+	padding: 10px 10px;
+}
+
+#login_form .radio {
+  background: url("../images/thumb.png") no-repeat scroll 0 0 transparent;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  height: 20px;
+  padding-bottom: 2px;
+  width: 75px;
+}
+
+
+
+
+
+#start-btn {
+
+	border: 3px solid #990000;
+
+	width: 200px;
+
+	margin: 10px auto 20px auto;
+
+	font-size: 30px;
+
+	font-weight: bold;
+
+	-moz-border-radius: 5px;
+
+	-webkit-border-radius: 5px;
+
+}
+
+
+
+#answer-btn {
+
+	border: 3px solid #990000;
+
+	width: 350px;
+
+	margin: 10px auto 20px auto;
+
+	font-size: 20px;
+
+	font-weight: bold;
+
+	-moz-border-radius: 5px;
+
+	-webkit-border-radius: 5px;
+
+}
+
+
+.button {
+
+	border: 1px solid #990000;
+
+	color: white;
+
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+
+	background-color: #D14836;
+
+}
+
+
+
+.button:hover {
+
+	border: 1px solid #990000;
+
+	color: white;
+
+	text-shadow: 0 1px rgba(0, 0, 0, 0.8);
+
+	background-color: #C93A2A;
+
+}
+
+
+
+#notify-container {
+
+	font-size: 100%;
+
+	font-weight: bold;
+
+	text-align: center;
+
+	position: fixed;
+
+	left: 0;
+
+	top: 0;
+
+	width: 100%;
+
+	height: 100;
+
+	z-index: 100;
+
+	color: #735005;
+
+}
+
+
+#notify-container div {
+	
+
+	background-color: #2B3E42;
+
+	background-image: url(../images/twitter_web_sprite_bgs.png);
+
+	background-repeat: repeat-x;
+
+	box-shadow: 0 2px 3px rgba(0,0,0,.25);
+
+	padding: 3px 0px;
+
+}
+
+
+
+#notify-container div .notify-text {
+
+	color: white;
+
+}
+
+
+#finish {
+	display: inline;
+	margin: 5px 30px 5px 5px;
+	padding: 5px;
+	width: 70px;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.statistic{
+	display:block;
+	margin: 50px auto;
+}
