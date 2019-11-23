@@ -1,0 +1,60 @@
+To Run Experiment:
+
+
+1. Create SQL instance with username "rank" and password "hello"
+
+2. Create SQL table with the following command:
+
+-- note we request $result = new mysqli('localhost','rank','hello','rank2'); in db_utility.php
+-- the database, name, etc., can be changed as one wishes
+--
+-- Database: `rank2`
+--
+CREATE DATABASE rank2;
+USE rank2;
+
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Table structure for table `experiments2`
+--
+
+CREATE TABLE `experiments_new` (
+  `assignment_id` int(11) NOT NULL,
+  `experiment_id` int(1) NOT NULL,
+  `visibility` varchar(50) NOT NULL,
+  `hit_id` int(11) NOT NULL,
+  `worker_id` int(11) NOT NULL,
+  `ipaddress` varchar(60) NOT NULL,
+  `NumAns` int(10) NOT NULL COMMENT 'Number of Answers',
+  `TimeStarted` varchar(100) NOT NULL COMMENT 'Time We Start Answering Question_i',
+  `AnswerChosen` int(10) NOT NULL COMMENT 'Answer User Chooses as the "Best" Answer',
+  `AnswerOrder` int(10) NOT NULL COMMENT 'Order Answers Appear',
+  `end_time` varchar(100) NOT NULL,
+  `status` varchar(60) NOT NULL,
+  `QNum` int(11) NOT NULL,
+survey_code	Score	nb	all_nb	all_nt	nt	
+  `TimeInArray_0` bigint(15) DEFAULT NULL,
+  `TimeInArray_1` bigint(15) DEFAULT NULL,
+  `TimeOutArray_0` bigint(15) DEFAULT NULL,
+  `TimeOutArray_1` bigint(15) DEFAULT NULL,
+`survey_codes` bigint(15) DEFAULT NULL,
+`RandQ` int(10) DEFAULT NULL,
+`Guess` FLOAT(10,6) DEFAULT NULL,
+`GuessAnswers` FLOAT(10,6) DEFAULT NULL,
+PRIMARY KEY(`assignment_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1459 DEFAULT CHARSET=latin1 COMMENT='Below are the exeriment variables';
+
+ALTER TABLE `experiments_new`
+  MODIFY `assignment_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=0;
+
+CREATE TABLE `survey_codes` (
+	`survey_code` int 11 NOT NULL
+);
+
+
+2. Start MySQL and Apache (we need Apache for jQuery)
+
+3. Direct users to visitor.php
