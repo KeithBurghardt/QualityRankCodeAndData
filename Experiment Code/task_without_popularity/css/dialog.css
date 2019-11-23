@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+fieldset {
+	border: 0;
+	text-align: center;
+}
+
+.captcha-img {
+	width:150px;
+	height:50px;
+}
+
+#dialog-overlay {
+ 
+    /* set it to fill the whole screen */
+    width:100%; 
+    height:100%;
+     
+    /* transparency for different browsers */
+    filter:alpha(opacity=50);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    background:#000;
+ 
+    /* make sure it appear behind the dialog box but above everything else */
+    position:absolute; 
+    top:0; left:0; 
+    z-index:3000; 
+ 
+    /* hide it by default */
+    display:none;
+}
+
+
+#dialog-box {
+	border: 10px solid #990000;
+    background:#eee;
+	
+    /* css3 drop shadow */
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    /* css3 border radius */
+    -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+	border-radius: 35px;
+	
+    /* styling of the dialog box, i have a fixed dimension for this demo */
+    width:500px; 
+    height: 450px;
+    
+    /* make sure it has the highest z-index */
+    position:fixed; 
+    z-index:5000;
+ 
+    /* hide it by default */
+    display:none;
+}
+ 
+#dialog-box .dialog-content {
+    /* style the content */
+    padding:0px; 
+    margin:20px auto;
+    color:#666; 
+    font-family:arial;
+    font-size:15px; 
+    width:420px; 
+}
+
+.dialog-btn-group{
+	margin-top:20px;
+	text-align:center;
+}
+
+#dialog-btn-validate, #dialog-btn-cancel, #submitButton{
+	border-width:0px;
+    /* styles for button */
+    padding: 5px 10px 6px 10px;
+    margin: 0px 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+    /* button color */
+    background-color: #e33100;
+
+    /* rounded corner */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+     
+    /* drop shadow */
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+     
+    /* text shaow */
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+#dialog-btn-validate:hover, #dialog-btn-cancel:hover, #submitButton:hover{
+    background-color: #c33100;  
+}
+
+/* extra styling */
+.problem-title {
+    font-size:18px;
+    display:block;
+    width:80%;
+    margin: 0px auto;
+    text-align:justify;
+}
+
+.answer {
+   display:block;
+   margin:10px auto;
+   border:none;
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   border-radius:5px;
+   -webkit-box-shadow:0 0 5px #666 inset;
+   -moz-box-shadow:0 0 5px #666 inset;
+   box-shadow:0 0 5px #666 inset;
+   font-size:20px;
+   width:80%;
+   height:35px;
+}
+
+.cap-answer{
+	display:inline;
+	width:60%;
+}
+
+.answer:focus { 
+	outline:none; 
+}

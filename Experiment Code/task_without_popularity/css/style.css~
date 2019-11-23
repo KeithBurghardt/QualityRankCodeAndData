@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+body.login {
+	font-family: Georgia, serif;
+	background: center 70px no-repeat #8EC1DA;
+	color: #3a3a3a;
+}
+
+#login_form {
+	width: 600px;
+	margin: 90px auto;
+	text-align: center;
+}
+
+
+#login_form .logo {
+	font-size: 30px;
+	font-weight: bold;
+	padding:0 0 0 0px;
+}
+
+#login_form .description {
+	text-align: left;
+	background-color: white;
+	margin: 20px auto;
+	padding: 50px 50px;
+	font-size: 20px;
+	
+	border: 10px solid #990000;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+}
+
+#start-btn {
+	border: 3px solid #990000;
+	width: 200px;
+	margin: 10px auto 20px auto;
+	font-size: 30px;
+	font-weight: bold;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.button {
+	border: 1px solid #990000;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	background-color: #D14836;
+}
+
+.button:hover {
+	border: 1px solid #990000;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.8);
+	background-color: #C93A2A;
+}
+
+#notify-container {
+	font-size: 100%;
+	font-weight: bold;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 200%;
+	height: 0;
+	z-index: 100;
+	color: #735005;
+}
+
+#notify-container div {
+	background-color: #2B3E42;
+	background-image: url(../images/twitter_web_sprite_bgs.png);
+	background-repeat: repeat-x;
+	box-shadow: 0 2px 3px rgba(0,0,0,.25);
+	padding: 3px 0px;
+}
+
+#notify-container div .notify-text {
+	color: white;
+}
+
+#finish {
+	display: inline;
+	margin: 5px 30px 5px 5px;
+	padding: 5px;
+	width: 70px;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.statistic{
+	display:block;
+	margin: 50px auto;
+}
