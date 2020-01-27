@@ -1,7 +1,5 @@
 These are codes used to analyze data. 
 
-- CleanSQLdata.py converts raw copy-pasted SQL data into a csv file. This file is then cleaned to create the data in the "cleaned_data" folder. 
-
 - MTurkGuesses.nb plots the simulation data. 
 
 - modelpvalues.wls is used to 
